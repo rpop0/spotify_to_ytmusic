@@ -41,3 +41,4 @@ class Settings:
     def save(self):
         with open(self.filepath, "w") as f:
             self.config.write(f)
+        self.config.read(self.filepath)
